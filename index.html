@@ -40,7 +40,7 @@
 </head>
 
 <body>
-  <div id="container"></div>
+  <div id="container" style="display:none;"></div>
 
   <div id="landscape-warning">
     <div class="warning-content">
@@ -61,20 +61,20 @@
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>
     let player;
-     const startTime = 227;
-    const endTime = 261;
+     const startTime = 0;
+    const endTime = 9999;
     window.onYouTubeIframeAPIReady = function() {
       player = new YT.Player('player', {
         height: '0',
         width: '0',
-        videoId: 'd4OMqGKBl6E',
+        videoId: 'grp6FCnioMM',
         playerVars: {
           autoplay: 0,
           start: startTime,
           end: endTime,
           controls: 0,
           loop: 1,
-          playlist: 'd4OMqGKBl6E'
+          playlist: 'grp6FCnioMM'
         },
         events: {
           onReady: () => {
